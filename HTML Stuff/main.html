@@ -16,12 +16,10 @@
 
         #logostr {
             width: 250px;
-            height: 180px;
         }
 
         th#nazwastr {
             width: 250px;
-            height: 67px;
         }
 
         th {
@@ -31,14 +29,21 @@
 
         th#przyciskistr {
             width: 275px;
-            height: 640px;
+        }
+        html {
+            overflow: hidden;
         }
     </style>
 </head>
 
 <body>
+    <div id="autordiv" class="maindiv" style="height: 100%; float: right; width: 80.6%;">
+        <h1 style="font-size: 50px; text-align: center;">TEST test AUGHHGHG1!!@244$</h1>
+        <div style="text-align: center; left: 50%;"><img src="proof-that-kratos-is-greek.jpeg"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptate doloribus sequi consectetur deleniti! Cupiditate, quae? Nemo corporis repellendus praesentium excepturi dolore est sit quibusdam? Ducimus modi voluptatum facere labore?</p>
+    </div>
 </body>
-<table id="tab-logo" border="1" style="position: absolute; left: 0.5%; top: 1%;">
+<table id="tab-logo" border="1" style="position: absolute; top: 0; height: 30vh; margin-top: 0.5%;">
     <tr>
         <th id="logostr" style="background-color: rgb(255, 250, 243);"><img src="logo.png" alt="AnyWiki"
                 style="height: 170px; width: 275px;"></th>
@@ -50,18 +55,18 @@
         </th>
     </tr>
 </table>
-<table id="wybory1" border="1" style="position: absolute; left: 0.5%; top: 29.5%">
+<table id="wybory1" border="1" style="position: absolute; bottom: 0; margin-bottom: 0.5%;">
     <tr>
-        <th id="przyciskistr" style="background-color: rgb(255, 250, 243); line-height: 30px;">
+        <th id="przyciskistr" style="background-color: rgb(255, 250, 243); line-height: 30px; height: 61vh;"> <!-- vh (wysokość okna) to alternatywka dla %, która działa lepiej ze względu na nie mające sensu utrudnienia wynikające z pozycji w HTML, ughh. (vh > %)-->
             <a href="main.html" style="color: black; font-size: 30px;">[Strona Główna]</a><br>
             <!-- text-decoration: none; -->
             <a href="" style="color: black; font-size: 30px;">[test2]</a><br>
             <a href="" style="color: black; font-size: 30px;">[test3]</a><br>
             <a href="" style="color: black; font-size: 30px;">[test4]</a><br>
             <a href="" style="color: black; font-size: 30px;">[test5]</a><br>
-            <a href="" style="color: black; font-size: 30px;">[test6]</a><br>
+            <a href="author.html" style="color: black; font-size: 30px;">[Autor]</a><br>
             <a href="author.html"
-                style="color: black; text-decoration: none; position: absolute; top: 95%; left: 5%; font-family: 'Courier New', Courier, monospace;">AnyWiki
+                style="color: black; text-decoration: none; font-family: 'Courier New', Courier, monospace; position: absolute; bottom: 0; left: 4%">AnyWiki
                 by
                 Kacper Kwapiński</a>
         </th>

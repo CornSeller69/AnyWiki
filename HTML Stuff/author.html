@@ -14,12 +14,10 @@
 
         #logostr {
             width: 250px;
-            height: 180px;
         }
 
         th#nazwastr {
             width: 250px;
-            height: 67px;
         }
 
         th {
@@ -29,17 +27,23 @@
 
         th#przyciskistr {
             width: 275px;
-            height: 200px;
+        }
+        html {
+            overflow: hidden;
         }
     </style>
 </head>
 
 <body>
-    <h1 style="font-size: 50px; text-align: center; margin-left: 250px;">Autor</h1>
-    <img src="autor.jpg" style="margin-left: 44.5%;"><br>
-    <p style="margin-left: 44.5%;">Kacper Kwapiński (CornSeller)</p>
+    <div id="autordiv" class="maindiv" style="height: 100%; float: right; width: 80.6%;">
+        <h1 style="font-size: 50px; text-align: center;">Autor</h1>
+        <div style="text-align:center; left: 50%;"><img id="img" src="autor.jpg" alt="pfp autora"></div>
+        <p style="text-align: center;">Kacper Kwapiński (CornSeller), klasa 1TP</p>
+        <p style="text-align: center;">Projekt wykonany jako projekt klasowy na 20 Maja, drzwi otwarte szkoły <br>TEB Technikum</p>
+        <p style="text-align: center; font-style: italic;">Licencja GNU GPL 3.0</p>
+    </div>
 </body>
-<table id="tab-logo" border="1" style="position: absolute; left: 0.5%; top: 1%;">
+<table id="tab-logo" border="1" style="position: absolute; top: 0; height: 30vh; margin-top: 0.5%;">
     <tr>
         <th id="logostr" style="background-color: rgb(255, 250, 243);"><img src="logo.png" alt="AnyWiki"
                 style="height: 170px; width: 275px;"></th>
@@ -51,13 +55,21 @@
         </th>
     </tr>
 </table>
-<table id="wybory1" border="1" style="position: absolute; left: 0.5%; top: 29.5%">
+<table id="wybory1" border="1" style="position: absolute; bottom: 0; margin-bottom: 0.5%;">
     <tr>
-        <th id="przyciskistr" style="background-color: rgb(255, 250, 243); line-height: 30px;">
+        <th id="przyciskistr" style="background-color: rgb(255, 250, 243); line-height: 30px; height: 61vh;"> <!-- vh (wysokość okna) to alternatywka dla %, która działa lepiej ze względu na nie mające sensu utrudnienia wynikające z pozycji w HTML, ughh. (vh > %)-->
             <a href="main.html" style="color: black; font-size: 30px;">[Strona Główna]</a><br>
             <!-- text-decoration: none; -->
+            <a href="" style="color: black; font-size: 30px;">[test2]</a><br>
+            <a href="" style="color: black; font-size: 30px;">[test3]</a><br>
+            <a href="" style="color: black; font-size: 30px;">[test4]</a><br>
+            <a href="" style="color: black; font-size: 30px;">[test5]</a><br>
+            <a href="author.html" style="color: black; font-size: 30px;">[Autor]</a><br>
+            <a href="author.html"
+                style="color: black; text-decoration: none; font-family: 'Courier New', Courier, monospace; position: absolute; bottom: 0; left: 4%">AnyWiki
+                by
+                Kacper Kwapiński</a>
         </th>
     </tr>
 </table>
-
 </html>

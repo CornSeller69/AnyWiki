@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="CornSeller">
-    <title>Autorstwo | AnyWiki</title>
+    <!-- chyba tak sie autora zapisywało, a jak nie to trudno i tak pewnie bedzie działać :P -->
+    <meta name="keywords" content="anywiki, anythingwiki, any wiki, anything wiki, wiki, wikpedia, cornseller">
+    <title>Wyszukiwanie | AnyWiki</title>
     <style>
         td {
             width: 100px;
@@ -32,21 +34,26 @@
         html {
             overflow: hidden;
         }
+
+        .lip {
+            font-size: 20px;
+        }
     </style>
 </head>
 
 <body>
     <div id="autordiv" class="maindiv" style="height: 100%; float: right; width: 80.6%;">
-        <h1 style="font-size: 50px; text-align: center;">Autor</h1><a href="https://github.com/CornSeller69/AnyWiki"
-            style="margin-left: 49.4%; ;"><img
-                src="https://raw.githubusercontent.com/CornSeller69/AnyWiki/main/Pics/github.png" alt="[GitHub]"
-                style="height: 30px; width: 30px; margin-bottom: 30px;"></a>
-        <div style="text-align:center; left: 50%;"><img id="img"
-                src="https://raw.githubusercontent.com/CornSeller69/AnyWiki/main/Pics/autor.jpg" alt="pfp autora"></div>
-        <p style="text-align: center;">Kacper Kwapiński (CornSeller), klasa 1TP</p>
-        <p style="text-align: center;">Projekt wykonany jako projekt klasowy na 20 Maja, drzwi otwarte szkoły <br>TEB
-            Technikum</p>
-        <p style="text-align: center; font-style: italic;">Licencja GNU GPL 3.0</p>
+        <h1 style="font-size: 50px; text-align: center;">Wyszukaj stronę</h1>
+        <div id="searchdiv" style="position: absolute; left: 42%;">
+            <input type="search" placeholder="Wpisuj tutaj..." style="height: 50px; width: 600px; font-size: 16px;">
+            <input type="submit" value="Szukaj!"
+                style="height: 50px; width: 100px; background-color: cornflowerblue; font-size: 16px;" onclick="">
+            <h2>placeholder</h2>
+            <p class="lip">placeholder</p>
+            <h2>placeholder</h2>
+            <p class="lip">Aplaceholder</p>
+            <h2>placeholder</h2>
+        </div>
     </div>
 </body>
 <table id="tab-logo" border="1" style="position: absolute; top: 0; height: 30vh; margin-top: 0.5%;">

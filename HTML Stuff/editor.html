@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="CornSeller">
-    <title>Autorstwo | AnyWiki</title>
+    <!-- chyba tak sie autora zapisywało, a jak nie to trudno i tak pewnie bedzie działać :P -->
+    <meta name="keywords" content="anywiki, anythingwiki, any wiki, anything wiki, wiki, wikpedia, cornseller">
+    <title>Wyszukiwanie | AnyWiki</title>
+    <!--<script src="creator.js"></script>-->
     <style>
         td {
             width: 100px;
@@ -35,18 +38,16 @@
     </style>
 </head>
 
-<body>
+<body onload="get()">
     <div id="autordiv" class="maindiv" style="height: 100%; float: right; width: 80.6%;">
-        <h1 style="font-size: 50px; text-align: center;">Autor</h1><a href="https://github.com/CornSeller69/AnyWiki"
-            style="margin-left: 49.4%; ;"><img
-                src="https://raw.githubusercontent.com/CornSeller69/AnyWiki/main/Pics/github.png" alt="[GitHub]"
-                style="height: 30px; width: 30px; margin-bottom: 30px;"></a>
-        <div style="text-align:center; left: 50%;"><img id="img"
-                src="https://raw.githubusercontent.com/CornSeller69/AnyWiki/main/Pics/autor.jpg" alt="pfp autora"></div>
-        <p style="text-align: center;">Kacper Kwapiński (CornSeller), klasa 1TP</p>
-        <p style="text-align: center;">Projekt wykonany jako projekt klasowy na 20 Maja, drzwi otwarte szkoły <br>TEB
-            Technikum</p>
-        <p style="text-align: center; font-style: italic;">Licencja GNU GPL 3.0</p>
+        <h1 style="font-size: 50px; text-align: center;">Tworzenie strony</h1>
+        <div id="searchdiv" style="position: absolute; left: 42%;">
+            <input type="text" id="wpis-nazwa" placeholder="Wpisz nowy tytuł..." style="height: 50px; width: 600px; font-size: 16px;">
+            <p style="color: red;">Uwaga! Nazwy stron nie powinny się powtarzać, nazwy stron można sprawdzić na liście stron.</p>
+            <textarea id="wpis-opis" placeholder="Wpisz nowy tekst..." style="height: 500px; width: 600px; font-size: 16px; resize: none;""></textarea>
+            <br><input type="submit" style="height: 50px; width: 100px; background-color: cornflowerblue; font-size: 16px;" value="Zapisz" onclick="save()">
+            <p id="savedText">
+        </div>
     </div>
 </body>
 <table id="tab-logo" border="1" style="position: absolute; top: 0; height: 30vh; margin-top: 0.5%;">
@@ -67,7 +68,6 @@
         <th id="przyciskistr" style="background-color: rgb(255, 250, 243); line-height: 30px; height: 61vh;">
             <!-- vh (wysokość okna) to alternatywka dla %, która działa lepiej ze względu na nie mające sensu utrudnienia wynikające z pozycji w HTML, ughh. (vh > %)-->
             <a href="main.html" style="color: black; font-size: 30px;">[Strona Główna]</a><br>
-            <!-- text-decoration: none; -->
             <a href="search.html" style="color: black; font-size: 30px;">[Wyszukiwanie]</a><br>
             <a href="editor.html" style="color: black; font-size: 30px;">[Stwórz Stronę]</a><br>
             <a href="" style="color: black; font-size: 30px;">[test4]</a><br>
@@ -80,5 +80,17 @@
         </th>
     </tr>
 </table>
+    <script>
+var storedItem = localStorage.getItem("storedItem");
 
+function save() {
+    var Item = document.getElementById("wpis-opis").value;
+    localStorage.setItem("storedItem", Item);
+    document.getElementById("savedText").innerHTML = item + " SAVED";
+}
+function get(){
+    localStorage.getItem("storedItem");
+    document.getElementById("openedText").innerHTML = storedItem + " OPENED";
+}
+    </script>
 </html>

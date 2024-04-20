@@ -41,18 +41,16 @@
     </style>
 </head>
 
-<body>
-    <div id="autordiv" class="maindiv" style="height: 100%; float: right; width: 80.6%;">
+<body onload="get()">
+    <div class="maindiv" style="height: 100%; float: right; width: 80.6%;">
         <h1 style="font-size: 50px; text-align: center;">Wyszukaj stronę</h1>
         <div id="searchdiv" style="position: absolute; left: 42%;">
             <input type="search" placeholder="Wpisuj tutaj..." style="height: 50px; width: 600px; font-size: 16px;">
             <input type="submit" value="Szukaj!"
                 style="height: 50px; width: 100px; background-color: cornflowerblue; font-size: 16px;" onclick="">
-            <h2>placeholder</h2>
-            <p class="lip">placeholder</p>
-            <h2>placeholder</h2>
-            <p class="lip">Aplaceholder</p>
-            <h2>placeholder</h2>
+            <!--pod tym komentarzem znajdują się pola, do których zapisują się informacje z pliku tekstowego...-->
+            <h2 id="web-nazwa">Tutaj pojawi się strona.</h2>
+            <p class="lip" id="openedText">Strona zostanie wyświetlona po wpisaniu odpowiedniej nazwy w wyszukiwarkę...</p>
         </div>
     </div>
 </body>
@@ -76,7 +74,7 @@
             <a href="main.html" style="color: black; font-size: 30px;">[Strona Główna]</a><br>
             <!-- text-decoration: none; -->
             <a href="search.html" style="color: black; font-size: 30px;">[Wyszukiwanie]</a><br>
-            <a href="" style="color: black; font-size: 30px;">[test3]</a><br>
+            <a href="editor.html" style="color: black; font-size: 30px;">[Stwórz Stronę]</a><br>
             <a href="" style="color: black; font-size: 30px;">[test4]</a><br>
             <a href="" style="color: black; font-size: 30px;">[test5]</a><br>
             <a href="author.html" style="color: black; font-size: 30px;">[Autor]</a><br>
@@ -87,5 +85,5 @@
         </th>
     </tr>
 </table>
-
+<script src="creator.js"></script>
 </html>

@@ -13,13 +13,19 @@ Co do tego czy wogóle Pan to zobaczy zależy, bo mam w planie projekt zapasowy 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="CornSeller">
-    <!-- chyba tak sie autora zapisywało, a jak nie to trudno i tak pewnie bedzie działać :P -->
     <meta name="keywords" content="anywiki, anythingwiki, any wiki, anything wiki, wiki, wikpedia, cornseller">
     <title>Wyszukiwanie | AnyWiki</title>
     <link rel="stylesheet" href="main-style.css">
     <script src="filer.js"></script>
 </head>
-
+<style>
+    html {
+        overflow: auto;
+    }
+    #fileContent {
+        text-align: center;
+    }
+</style>
 <body onload="get()">
     <div class="maindiv" style="height: 100%; float: right; width: 80.6%;">
         <h1 style="font-size: 50px; text-align: center;">Ładowanie stron</h1>

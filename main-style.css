@@ -1,0 +1,32 @@
+        td {
+            width: 100px;
+            height: 100px;
+        }
+
+        #logostr {
+            width: 250px;
+        }
+
+        th#nazwastr {
+            width: 250px;
+        }
+
+        th {
+            line-height: 1.75px;
+            border-width: 2px;
+        }
+
+        th#przyciskistr {
+            width: 275px;
+        }
+
+        html {
+            overflow: hidden;
+        }
+
+        body {
+            background-image: url("https://raw.githubusercontent.com/CornSeller69/AnyWiki/main/Pics/bg.png");
+            background-repeat: repeat;
+            /*background-repeat: repeat-y;
+            background-repeat: repeat-x;*/
+        }

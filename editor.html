@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CornSeller">
+    <meta name="keywords" content="anywiki, anythingwiki, any wiki, anything wiki, wiki, wikpedia, cornseller">
+    <title>Wyszukiwanie | AnyWiki</title>
+    <!-- <script> pod tym komentarzem powoduje poprawny zapis, jest to jakiś filesaver, jakaś biblioteka js od cloudflare'a (ci frajerzy od bezpieczeństwa stron co ciągle robią do wszystkiego gigantyczne wrzody na dupie.) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="filer.js"></script>
+    <link rel="stylesheet" href="main-style.css">
+    <style>
+        .lip {
+            font-size: 20px;
+        }
+        .bck {
+            margin-left: -27%;
+        }
+    </style>
+</head>
+<body>
+    <div id="autordiv" class="maindiv" style="height: 100%; float: right; width: 80.6%;">
+        <h1 style="font-size: 50px; text-align: center;">Tworzenie strony</h1>
+        <div id="searchdiv" style="position: absolute; left: 46%;">
+            <p class="lip" style="color: red">Polecane jest nie powtarzanie się tytułów!</p>
+            <input type="text" id="title" placeholder="Wpisz tytuł artykułu" style="height: 50px; width: 400px; font-size: 16px; background-color: rgb(255, 250, 243);"><br>
+            <textarea id="textcon" style="height: 50px; width: 400px; font-size: 16px; background-color: rgb(255, 250, 243);">Tutaj możesz wpisać zawartość tego artykułu!</textarea><br>
+            <button id="submit" onclick="saveFile()" style="height: 50px; width: 100px; background-color: cornflowerblue; font-size: 16px;">Zapisz!</button>
+            <br><h4 class="bck">Formatowanie:</h4>
+            <p class="lip bck">Twój artykuł zapisywany jest w specjalny sposób zezwalający na używanie tagów HTML do stylizowania swojej strony</p>
+            <p class="bck">Poprawny zapis to &lt;TAG&gt;TEKST&lt;/TAG&gt;, lista podstawowych tagów do użycia w stylizacji:</p>
+            <p class="bck">&lt;h1&gt; - Nagłówek (można zmieniać numer na od 1 do 6; im mniejszy numer tym większy tekst w nagłówku)</p>
+            <p class="bck">&lt;p&gt; - Paragraf/Tekst (generalnie nie jest to wymagane - można od razu wpisywać tekst bez tagu - lecz lepiej napisać poprawnie)</p>
+            <p class="bck">&lt;br&gt; - Przerzut do następnej linijki (Nie wymaga &lt;/TAG&gt;!)</p>
+            <a class="bck lip" href="https://www.w3schools.com/html/default.asp">Co do większej znajomości, zalecana jest znajomość w HTMLu...</a>
+            <!-- TUTAJ SKOPIUJ!!!!!!! --><br><a class="bck lip" style="color: red;" href="infos.html">Ważne informacje co do zapisu plików!</a>
+        </div>
+    </div>
+</body>
+<table id="tab-logo" border="1" style="position: absolute; top: 0; height: 30vh; margin-top: 0.5%;">
+    <tr>
+        <th id="logostr" style="background-color: rgb(255, 250, 243);"><img
+                src="https://github.com/CornSeller69/AnyWiki/blob/main/Pics/logo.png?raw=true" alt="Loading logo..."
+                style="height: 170px; width: 275px;"></th>
+    </tr>
+    <tr>
+        <th id="nazwastr" style="background-color: rgb(255, 250, 243);">
+            <h1>AnyWiki</h1>
+            <h3>Wikipedia do... czegokolwiek!</h3>
+        </th>
+    </tr>
+</table>
+<table id="wybory1" border="1" style="position: absolute; bottom: 0; margin-bottom: 0.5%;">
+    <tr>
+        <th id="przyciskistr" style="background-color: rgb(255, 250, 243); line-height: 30px; height: 61vh;">
+            <!-- vh (wysokość okna) to alternatywka dla %, która działa lepiej ze względu na nie mające sensu utrudnienia wynikające z pozycji w HTML, ughh. (vh > %)-->
+            <a href="main.html" style="color: black; font-size: 30px;">[Strona Główna]</a><br>
+            <a href="search.html" style="color: black; font-size: 30px;">[Ładowanie Stron]</a><br>
+            <a href="editor.html" style="color: black; font-size: 30px;">[Stwórz Stronę]</a><br>
+            <a href="author.html" style="color: black; font-size: 30px;">[Autor]</a><br>
+            <a href="author.html"
+                style="color: black; text-decoration: none; font-family: 'Courier New', Courier, monospace; position: absolute; bottom: 0; left: 4%">AnyWiki
+                by
+                Kacper Kwapiński</a>
+        </th>
+    </tr>
+</table>
+</html>

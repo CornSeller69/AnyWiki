@@ -1,3 +1,4 @@
+Download what you need to download: <a href="Download%20This%20You%20Moron/AnyWiki-Final.zip">Here</a>
 # AnyWiki
 <h3>What is AnyWiki?</h3>
 AnyWiki is a simple Wikipedia-like project made in HTML. The premise is that it's a cheaper knock-off of Wikipedia pretty much, where since it won't be public website or anything it's going to be lawless.
